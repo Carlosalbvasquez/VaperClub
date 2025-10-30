@@ -1,7 +1,7 @@
 // backend/controllers/productController.js
 
 const asyncHandler = require('express-async-handler');
-const Product = require('../models/ProductModel');
+const Product = require('../models/productModel');
 
 /**
  * @desc    Obtener todos los productos
@@ -102,4 +102,5 @@ module.exports = {
     createProduct,
     updateProduct,
     deleteProduct,
+
 };
