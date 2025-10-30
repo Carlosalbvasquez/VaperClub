@@ -68,7 +68,7 @@ const authUser = asyncHandler(async (req, res) => {
     }
 });
 
-module.exports = { registerUser, authUser };
+module.exports = { registerUser, authUser, getUserProfile };
 // backend/controllers/userController.js (AÑADIR FUNCIÓN)
 
 /**
@@ -110,3 +110,4 @@ router.post('/2fa/send', protect, send2FACode);
 router.post('/2fa/verify', protect, verify2FACode);
 
 module.exports = router;
+
